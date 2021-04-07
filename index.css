@@ -1,0 +1,11 @@
+.boton-principal:hover{
+    background: rgb(167, 77, 25) !important;
+}
+
+.iconos-redes:hover{
+    background: #dbdbdb !important;
+}
+
+.arriba-boton-principal{
+    text-align: start !important;
+}
