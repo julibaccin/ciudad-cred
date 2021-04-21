@@ -79,18 +79,26 @@
             <label for="telefono">Teléfono</label>
           </div>
           <div class="form-floating mb-3">
-            <input required type="text" class="form-control" id="genero"  autocomplete="off">
-            <label for="genero">Genero</label>
-          </div>
-          <div class="form-floating mb-3">
             <input required type="number" class="form-control" id="cuanto" autocomplete="off">
             <label for="cuanto">Cuánto queres solicitar?</label>
           </div>
-          <div class="form-floating mb-3">
-            <input required type="number" class="form-control" id="cuotas"  autocomplete="off">
-            <label for="cuotas">¿En cuantas cuotas?</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Pedir Credito!</button>
+          <select class="form-select" id="cuotas" aria-label="Default select example">
+            <option selected>¿En cuantas cuotas?</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <button type="submit" class="btn btn-primary mt-3">Pedir Credito!</button>
         </form>
       </div>
     </div>
