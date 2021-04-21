@@ -16,6 +16,6 @@ let cadena = `mailto:consultas@ciudadcred.com?Subject=Desde%20Pagina%20web&body=
               Cuanto:%20${cuanto.value}%0A
               Cuotas:%20${cuotas.value}`
 
-window.open(cadena);        
+window.open(cadena,'_self')
 
 });
