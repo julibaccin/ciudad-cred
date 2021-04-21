@@ -54,6 +54,53 @@
     </nav>
 
 
+<!--MODAL-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Completá tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="form">
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="nombre" 
+            autocomplete="off">
+            <label for="nombre">Nombre y Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="number" class="form-control" id="dni" 
+            autocomplete="off">
+            <label for="dni">DNI</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="number" class="form-control" id="telefono" autocomplete="off">
+            <label for="telefono">Teléfono</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="email" class="form-control" id="email" autocomplete="off">
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="genero"  autocomplete="off">
+            <label for="genero">Genero</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="number" class="form-control" id="cuanto" autocomplete="off">
+            <label for="cuanto">Cuánto queres solicitar?</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input required type="number" class="form-control" id="cuotas"  autocomplete="off">
+            <label for="cuotas">¿En cuantas cuotas?</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Pedir Credito!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--MODAL-->
     <!--Principal-->
     <div class="row bg-light" >
 
@@ -62,9 +109,11 @@
           <p id="inicio" class="text-start fs-1 p-5 mt-3">
             "Somos una empresa familiar con valores de trabajo e integridad,
             brindamos soluciones desde la empatía y la comprensión"
-            <button
+            <button id="btnPediTuCredito"
           class="btn fs-2 rounded-pill p-3 text-white boton-principal my-3 arriba-boton-principal"
-          style="background-color: rgb(244, 150, 97);">
+          style="background-color: rgb(244, 150, 97);"
+          data-bs-toggle="modal" data-bs-target="#exampleModal"
+          >
           ¡¡ Pedí tu Crédito !!
           </button>
           </p>
@@ -252,5 +301,6 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
