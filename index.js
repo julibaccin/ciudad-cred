@@ -10,7 +10,7 @@ form.addEventListener('submit', (e)=>{
 
 e.preventDefault()
 console.log(nombre.value);
-let cadena = `mailto:consultar@ciudadcred.com?Subject=Desde%20Pagina%20web&body=
+let cadena = `mailto:consultas@ciudadcred.com?Subject=Desde%20Pagina%20web&body=
               Nombre:%20${nombre.value}%0A
               DNI:%20${dni.value}%0A
               Telefono:%20${telefono.value}%0A
