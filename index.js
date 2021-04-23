@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), options)
+const myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
 const nombre = document.getElementById('nombre')
 const dni = document.getElementById('dni')
 const telefono = document.getElementById('telefono')
@@ -18,7 +18,6 @@ let cadena = `mailto:consultas@ciudadcred.com?Subject=Desde%20Pagina%20web&body=
               Cuotas:%20${cuotas.value}`
 
 myModal.hide();
-
 window.open(cadena,'_self')
 
 });
