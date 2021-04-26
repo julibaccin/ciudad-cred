@@ -2,6 +2,10 @@
     background: rgb(167, 77, 25) !important;
 }
 
+.arriba-boton-whatsapp:hover{
+    background: rgb(24, 82, 33) !important;
+}
+
 .iconos-redes:hover{
     background: #dbdbdb !important;
 }
